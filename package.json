@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "hover.css": "^2.3.2",
+    "live-server": "^1.2.2",
+    "mdb-ui-kit": "^6.2.0"
+  },
+  "name": "nft-marketplace",
+  "version": "1.0.0",
+  "description": "abut bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nima habibnezhad",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: worksans;
+    src: url("/font/work sans/WorkSans-Medium.eot");
+    src: url("/font/work sans/WorkSans-Medium.ttf");
+    src: url("/font/work sans/WorkSans-Medium.woff");
+    src: url("/font/work sans/WorkSans-Medium.woff2");
+}

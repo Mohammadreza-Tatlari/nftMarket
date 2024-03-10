@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NFT Marketplace</title>
+    <!--Link mdb5-->
+    <link rel="stylesheet" href="node_modules/mdb-ui-kit/css/mdb.min.css">
+    <!--Link css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--link hover.css-->
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
+
+</head>
+<body>
+<header class="position-relative">
+    <section class="naving d-flex col-12 flex-row flex-nowrap justify-content-between align-items-center px-3">
+        <div class="d-flex align-items-center mb-xl-4 ">
+            <img src="imag/headericon.png" alt="header icon">
+            <p class="text-white fw-bold pt-3  ps-3 fw-normal">NFT Marketplace</p>
+        </div>
+<!--        open small menu icon-->
+        <div class="d-xl-none">
+            <img id="openmenu"  src="imag/Burger%20Menu.svg" alt="menu icon">
+
+        </div>
+        <div class="menu d-none d-xl-block col-6">
+            <nav class="col-12 d-flex ">
+                <ul class="list-unstyled col-12 d-flex justify-content-around align-items-center">
+                    <li><a class="text-white hvr-underline-from-center" href="#">Marketplace</a></li>
+                    <li><a class="text-white hvr-underline-from-center" href="#">Rankings</a></li>
+                    <li><a class="text-white hvr-underline-from-center" href="#">Connect a wallet</a></li>
+                    <li class="hvr-icon-grow"><a class="text-white " href="#">
+                        <img class="hvr-icon d-inline-block" src="imag/User.svg" alt="User icon">
+                        Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="smallmenu" class="smallmenu d-xl-none position-absolute opacity-0">
+            <nav class="col-12 h-100">
+                <ul class="d-flex flex-column flex-nowrap px-0 py-0 align-items-center justify-content-around col-12 ">
+                    <li class="col-12 text-center"><a class="text-white" href="#">Marketplace</a></li>
+                    <li class="col-12 text-center"><a class="text-white" href="#">Rankings</a></li>
+                    <li class="col-12 text-center"><a class="text-white" href="#">Connect a wallet</a></li>
+                    <li class="col-8 text-center"><a class="text-white" href="#">
+                        <img class="hvr-icon d-inline-block" src="imag/User.svg" alt="User icon">
+                        Sign Up
+                    </a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+</header>
+<main class="">
+    <section class="discover mt-5 d-md-none d-xl-none d-xxl-none flex-row flex-wrap">
+        <div>
+            <div class="divtext col-12 text-white col-md-5">
+                <h1 class="txt1">Discover digital art & Collect NFTs</h1>
+                <p class="txt2 mt-3 mb-5">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art
+                    from
+                    more than 20k NFT artists.</p>
+            </div>
+            <div class="divcard card2 caeding">
+                <div class="bg-image hover-overlay ripple">
+                    <img src="imag/discoverpic.png" class="img-fluid col-12"/>
+                    <a href="#">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-white">Space Walking</h5>
+                    <div class="card-text d-flex flex-row flex-nowrap align-items-center">
+                        <img src="imag/Avatar%20Placeholder.svg" class="me-3 d-inline-block" alt="">
+                        <p class="text-white mt-sm-3">Animakid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="bt btn btn-primary mt-5 col-12"><img src="imag/jet.svg" alt=""> Get Started
+            </button>
+        </div>
+        <div class="col-12 d-flex flex-row flex-nowrap justify-content-around align-items-center mt-4 gap-5">
+            <div class="d-flex flex-column flex-nowrap align-items-center">
+                <span class="fs-3 fw-bold text-white">240k+</span>
+                <span class="fs-5 text-white">Sale</span>
+            </div>
+            <div class="d-flex flex-column flex-nowrap align-items-center">
+                <span class="fs-3 fw-bold text-white">100k</span>
+                <span class="fs-5 text-white">Auctions</span>
+            </div>
+            <div class="d-flex flex-column flex-nowrap align-items-center">
+                <span class="fs-3 fw-bold text-white">240k</span>
+                <span class="fs-5 text-white">Artists</span>
+            </div>
+        </div>
+    </section>
+    <!--section diffrent main section for big size-->
+    <section
+            class="d-none d-md-flex flex-md-row flex-md-nowrap justify-content-md-around align-items-center discover mt-5 col-md-12 flex-row flex-wrap">
+        <div class=col-5">
+            <div class="divtext col-12 text-white col-md-5">
+                <h1 class="txt1">Discover digital art & Collect NFTs</h1>
+                <p class="txt2 mt-3 mb-5">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art
+                    from
+                    more than 20k NFT artists.</p>
+            </div>
+            <div class="col-12">
+                <button type="button" class="bt btn btn-primary mt-5 col-12"><img src="imag/jet.svg" alt=""> Get Started
+                </button>
+            </div>
+            <div class="col-12 d-flex flex-row flex-nowrap justify-content-around align-items-center mt-4 gap-5">
+                <div class="d-flex flex-column flex-nowrap align-items-center">
+                    <span class="fs-3 fw-bold text-white">240k+</span>
+                    <span class="fs-5 text-white">Sale</span>
+                </div>
+                <div class="d-flex flex-column flex-nowrap align-items-center">
+                    <span class="fs-3 fw-bold text-white">100k</span>
+                    <span class="fs-5 text-white">Auctions</span>
+                </div>
+                <div class="d-flex flex-column flex-nowrap align-items-center">
+                    <span class="fs-3 fw-bold text-white">240k</span>
+                    <span class="fs-5 text-white">Artists</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="divcard card2 caeding">
+                <div class="bg-image hover-overlay ripple col-12">
+                    <img src="imag/discoverpic.png" class="img-fluid col-12"/>
+                    <a href="#">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="cbody card-body d-flex flex-column justify-content-around ">
+                    <h5 class="card-title text-white">Space Walking</h5>
+                    <div class="card-text d-flex flex-row flex-nowrap align-items-center ">
+                        <img src="imag/Avatar%20Placeholder.svg" class="me-3 d-inline-block" alt="">
+                        <p class="text-white mt-sm-3">Animakid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="collection col-12">
+        <div class="col-12 ">
+            <p class="fw-bolder">Trending Collection</p>
+            <p class="text-white">Checkout our weekly updated trending collection.</p>
+        </div>
+        <div class="mt-5 d-md-flex flex-md-row gap-md-5 gap-lg-0 justify-content-md-around align-items-md-center">
+            <div class="col-12 col-md-5 col-lg-4">
+                <div class="d-flex justify-content-center col-12">
+                    <img class="col-10" src="imag/collection/1-1.png" alt="dog pic one">
+                </div>
+                <div class="mt-3 col-12 d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                    <img class=" col-md-3" src="imag/collection/1-2.png" alt="dog pic two">
+                    <img class=" col-md-3" src="imag/collection/1-3.png" alt="dog pic three">
+                    <a class="text-decoration-none text-white fw-bold" href="#">1025+</a>
+                </div>
+                <div class="col-sm-12 px-sm-5 px-md-3 mt-3">
+                    <p class="col-sm-12  text-white fw-bold mb-1 fs-5">DSGN Animals</p>
+                    <div class="card-text d-flex flex-row flex-nowrap align-items-center gap-3">
+                        <img src="imag/collection/smallimg1.png" alt=""><span class="text-white">Mr Fox</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-5 col-lg-4">
+                <div class="d-flex justify-content-center col-12">
+                    <img class="col-10" src="imag/collection/2-1.png" alt="dog pic one">
+                </div>
+                <div class="mt-3 col-12 d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                    <img class="col-md-3 rounded-5" src="imag/collection/2-1.png" alt="dog pic two">
+                    <img class="col-md-3 rounded-5" src="imag/collection/2-1.png" alt="dog pic three">
+                    <a class="text-decoration-none text-white fw-bold" href="#">1025+</a>
+                </div>
+                <div class="col-sm-12 px-5 px-md-3 mt-3">
+                    <p class="col-sm-12  text-white fw-bold mb-1 fs-5">Magic Mushrooms</p>
+                    <div class="card-text d-flex flex-row flex-nowrap align-items-center gap-3">
+                        <img src="imag/collection/smallimg2.png" alt=""><span class="text-white">Shroomie</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-none d-lg-block col-lg-4">
+                <div class="d-flex justify-content-center col-12">
+                    <img class="col-10" src="imag/collection/3-1.png" alt="dog pic one">
+                </div>
+                <div class="mt-3 col-12 d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                    <img class="col-md-3 rounded-5" src="imag/collection/3-1.png" alt="dog pic two">
+                    <img class="col-md-3 rounded-5" src="imag/collection/3-1.png" alt="dog pic three">
+                    <a class="text-decoration-none text-white fw-bold" href="#">1025+</a>
+                </div>
+                <div class="col-sm-12 px-5 px-md-3 mt-3">
+                    <p class="col-sm-12  text-white fw-bold mb-1 fs-5">Disco Machines</p>
+                    <div class="card-text d-flex flex-row flex-nowrap align-items-center gap-3">
+                        <img src="imag/collection/smallimg3.png" alt=""><span class="text-white">BeKind2Robots</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="creaor mt-5">
+        <div class="col-12 mb-4">
+            <p class="text-white fs-1 d-md-flex flex-column flex-nowrap">Top creators</p>
+            <div class="d-md-flex flex-row flex-nowrap justify-content-md-around justify-content-lg-between align-items-center">
+                <p class="text-white col-md-5 col-lg-7">Checkout Top Rated Creators on the NFT Marketplace</p>
+                <div class="d-none d-md-block col-md-5 col-lg-3 col-12">
+                    <button type="button" class="btn col-12 text-white fw-bold" data-mdb-ripple-color="dark"
+                            style="border-radius: 20px;height: 60px;border: 1px solid  #A259FF;">
+                        <img src="imag/creator/flight.svg" class="me-1" alt="">
+                        View Rankings
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex flex-row flex-nowrap justify-content-md-around d-xl-none">
+            <div class="col-md-5">
+                <div class="dcreator col-12 rounded-7 mb-4 d-flex flex-row flex-nowrap justify-content-between align-items-center "
+                     style="height:100px;background-color: #3b3b3b;">
+                    <div class="px-1 col-2 d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" src="imag/creator/person1.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">1</span>
+                    </div>
+                    <div class="col-10">
+                        <p class="text-white col-12 fw-bold">Keepitreal</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="dcreator col-12 rounded-7 mb-4 d-flex flex-row flex-nowrap justify-content-between align-items-center "
+                     style="height:100px;background-color: #3b3b3b;">
+                    <div class="px-1 me-md-3 col-2 d-inline-flex">
+                        <img class="fa-envelope rounded-circle" src="imag/creator/person2.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">2</span>
+                    </div>
+                    <div class="col-10">
+                        <p class="text-white col-12 fw-bold">DigiLab</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">32.13 ETH</span>
+                    </div>
+                </div>
+
+                <div class="dcreator col-12 rounded-7 mb-4 d-flex flex-row flex-nowrap justify-content-between align-items-center "
+                     style="height:100px;background-color: #3b3b3b;">
+                    <div class="px-1 me-md-3 col-2 d-inline-flex">
+                        <img class="fa-envelope rounded-circle" src="imag/creator/person3.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">3</span>
+                    </div>
+                    <div class="col-10">
+                        <p class="text-white col-12 fw-bold">GravityOne</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">28.93 ETH</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <div class="dcreator col-12 rounded-7 mb-4 d-flex flex-row flex-nowrap justify-content-between align-items-center "
+                     style="height:100px;background-color: #3b3b3b;">
+                    <div class="px-1 me-md-3 col-2 d-inline-flex">
+                        <img class="fa-envelope rounded-circle" src="imag/creator/person4.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">4</span>
+                    </div>
+                    <div class="col-10">
+                        <p class="text-white col-12 fw-bold">Juanie</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">25.30 ETH</span>
+                    </div>
+                </div>
+
+                <div class="dcreator col-12 rounded-7 mb-4 d-flex flex-row flex-nowrap justify-content-between align-items-center "
+                     style="height:100px;background-color: #3b3b3b;">
+                    <div class="px-1 me-md-3 col-2 d-inline-flex">
+                        <img class="fa-envelope rounded-circle" src="imag/creator/person5.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">5</span>
+                    </div>
+                    <div class="col-10">
+                        <p class="text-white col-12 fw-bold">BlueWhale</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">22.22 ETH</span>
+                    </div>
+                </div>
+
+                <div class="dcreator d-none d-md-flex col-12 rounded-7 mb-4 flex-row flex-nowrap justify-content-between align-items-center "
+                     style="height:100px;background-color: #3b3b3b;">
+                    <div class="px-1 me-md-3 col-2 d-inline-flex">
+                        <img class="fa-envelope rounded-circle" src="imag/creator/person6.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">6</span>
+                    </div>
+                    <div class="col-10">
+                        <p class="text-white col-12 fw-bold">Mr Fox</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">19.28 ETH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-block d-md-none col-12">
+            <button type="button" class="btn col-12 text-white fw-bold" data-mdb-ripple-color="dark"
+                    style="border-radius: 20px;height: 60px;border: 1px solid  #A259FF;">
+                <img src="imag/creator/flight.svg" class="me-1" alt="">
+                View Rankings
+            </button>
+        </div>
+        <div class="d-none d-xl-grid gap-4 justify-content-around">
+            <div class="row gap-4">
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-1.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">1</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">Keepitreal</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-2.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">2</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">DigiLab</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-3.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">3</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">GravityOne</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-4.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">4</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">Juanie</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row gap-4">
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-5.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">5</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">BlueWhale</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-6.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">6</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">mr fox</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-7.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">7</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">Shroomie</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-8.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">8</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">robotica</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row gap-4">
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-9.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">9</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">RustyRobot</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-10.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">10</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">animakid</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-11.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">11</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">Dotgu</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+                <div class="col dcreator rounded-9 d-flex flex-column flex-wrap align-items-center justify-content-center gap-3"
+                     style="height:230px;width: 230px;background-color: #3b3b3b;">
+                    <div class="px-1  d-inline-flex me-md-3">
+                        <img class="fa-envelope rounded-circle" style="width: 100px;height: 100px"
+                             src="imag/creator/person2-12.png" alt="avatar"/>
+                        <span class="badge ms-1 rounded-pill badge-notification p-1 "
+                              style="background-color: #2B2B2B;color: #5b5b5b">12</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-white fw-bold">Ghiblier</p>
+                        <span class="fw-bold">Total Sales:</span>
+                        <span class="text-white">34.53 ETH</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="browsercatgory">
+        <div class="mt-5 mb-5">
+            <h1 class="text-white" style="font-family: worksans">Browse Categories</h1>
+        </div>
+        <div class="d-flex flex-row flex-wrap justify-content-center gap-5 gap-md-2">
+            <div class="d-flex flex-column flex-md-row justify-content-md-around gap-xl-5 mt-xl-2 gap-3">
+                <div class="categury card2">
+                    <img src="imag/browsercatgory/1.png" class="card-img-top" alt="Sunset Over the Sea"/>
+                    <div class="card-body">
+                        <p class="card-text text-white">Art</p>
+                    </div>
+                </div>
+                <div class="categury card2">
+                    <img src="imag/browsercatgory/2.png" class="card-img-top" alt="Sunset Over the Sea"/>
+                    <div class="card-body">
+                        <p class="card-text text-white">Collectibles</p>
+                    </div>
+                </div>
+                <div class="categury card2">
+                    <img src="imag/browsercatgory/3.png" class="card-img-top" alt="Sunset Over the Sea"/>
+                    <div class="card-body">
+                        <p class="card-text text-white">Music</p>
+                    </div>
+                </div>
+                <div class="categury card2">
+                    <img src="imag/browsercatgory/4.png" class="card-img-top" alt="Sunset Over the Sea"/>
+                    <div class="card-body">
+                        <p class="card-text text-white">Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-md-around gap-xl-5 mt-xl-2 gap-3">
+                <div class="categury card2">
+                    <img src="imag/browsercatgory/5.png" class="card-img-top" alt="Sunset Over the Sea"/>
+                    <div class="card-body">
+                        <p class="card-text text-white">Video</p>
+                    </div>
+                </div>
+                <div class="categury card2">
+                    <img src="imag/browsercatgory/6.png" class="card-img-top" alt="Sunset Over the Sea"/>
+                    <div class="card-body">
+                        <p class="card-text text-white">Utility</p>
+                    </div>
+                </div>
+                <div class="categury card2">
+                    <img src="imag/browsercatgory/7.png" class="card-img-top" alt="Sunset Over the Sea"/>
+                    <div class="card-body">
+                        <p class="card-text text-white">Sport</p>
+                    </div>
+                </div>
+                <div class="categury card2">
+                    <img src="imag/browsercatgory/8.png" class="card-img-top" alt="Sunset Over the Sea"/>
+                    <div class="card-body">
+                        <p class="card-text text-white">Virtual Worlds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discover mt-5 ">
+        <div class="d-md-flex flex-md-row justify-content-md-between align-items-md-center">
+            <div>
+                <h2 class="text-white">Discover More NFTs</h2>
+                <p class="text-white">Explore new trending NFTs</p>
+            </div>
+            <button type="button" class="btn col-4 d-none d-md-block text-white fw-bold" data-mdb-ripple-color="dark"
+                    style="border-radius: 20px;height: 60px;border: 1px solid  #A259FF;">
+                <img src="imag/Eye.svg" class="me-1" alt="">
+                See All
+            </button>
+        </div>
+        <div class="mt-5 d-md-flex flex-md-row flex-md-nowrap justify-content-md-around d-flex flex-column align-items-center align-items-md-center gap-lg-3">
+            <div class="discoveritm col-md-5 col-lg-4 card2 caeding">
+                <div class="bg-image hover-overlay ripple col-12">
+                    <img src="imag/discoverpic.png" class="imgfor img-fluid col-12"/>
+                    <a href="#">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="cbody card-body d-flex flex-column justify-content-around ">
+                    <h2 class="card-title pt-lg-0 mt-lg-0 text-white">Distant Galaxy</h2>
+                    <div class="card-text d-flex flex-row flex-nowrap align-items-center ">
+                        <img src="imag/Avatar%20Placeholder.svg" class="me-3 d-inline-block" alt="">
+                        <p class="text-white mt-sm-3">MoonDancer</p>
+                    </div>
+                    <div class="d-flex flex-row  justify-content-between align-items-center mt-2 mt-lg-0">
+                        <div>
+                            <p class="mb-1">Price:</p>
+                            <p class="text-white fw-bold">1.63 ETH</p>
+                        </div>
+                        <div>
+                            <p class="mb-1">Highest Bid</p>
+                            <p class="text-white fw-bold">0.33 wETH</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="discoveritm col-md-5 col-lg-4 mt-4 mt-md-0 card2 caeding">
+                <div class="bg-image hover-overlay ripple col-12">
+                    <img src="imag/life%20on.png" class="imgfor img-fluid col-12"/>
+                    <a href="#">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="cbody card-body d-flex flex-column justify-content-around  ">
+                    <h2 class="card-title text-white">Life on Edena</h2>
+                    <div class="card-text d-flex flex-row flex-nowrap align-items-center ">
+                        <img src="imag/Avatar%20Placeholder.svg" class="me-3 d-inline-block" alt="">
+                        <p class="text-white mt-sm-3">NebulaKid</p>
+                    </div>
+                    <div class="d-flex flex-row  justify-content-between align-items-center mt-2">
+                        <div>
+                            <p class="mb-1">Price:</p>
+                            <p class="text-white fw-bold">1.63 ETH</p>
+                        </div>
+                        <div>
+                            <p class="mb-1">Highest Bid</p>
+                            <p class="text-white fw-bold">0.33 wETH</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="discoveritm mt-md-0 d-md-none d-lg-block col-lg-4 mt-4 card2 caeding">
+                <div class="bg-image hover-overlay ripple col-12">
+                    <img src="imag/astro.png" class="imgfor img-fluid col-12"/>
+                    <a href="#">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="cbody card-body d-flex flex-column justify-content-around ">
+                    <h2 class="card-title text-white">AstroFiction</h2>
+                    <div class="card-text d-flex flex-row flex-nowrap align-items-center ">
+                        <img src="imag/Avatar%20Placeholder.svg" class="me-3 d-inline-block" alt="">
+                        <p class="text-white mt-sm-3">Spaceone</p>
+                    </div>
+                    <div class="d-flex flex-row  justify-content-between align-items-center mt-2">
+                        <div>
+                            <p class="mb-1">Price:</p>
+                            <p class="text-white fw-bold">1.63 ETH</p>
+                        </div>
+                        <div>
+                            <p class="mb-1">Highest Bid</p>
+                            <p class="text-white fw-bold">0.33 wETH</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn col-12 mt-4 d-md-none text-white fw-bold" data-mdb-ripple-color="dark"
+                style="border-radius: 20px;height: 60px;border: 1px solid  #A259FF;">
+            <img src="imag/Eye.svg" class="me-1" alt="">
+            See All
+        </button>
+    </section>
+    <section class="para mt-5 d-md-flex flex-md-row flex-md-nowrap justify-content-md-center position-relative">
+        <!--for linear gradiant cover i n background-->
+        <div class="d-lg-none linear position-absolute">
+            <!--Shroomie-->
+            <div class="d-flex flex-row justify-content-center align-items-center gap-3 ">
+                <img src="imag/paralax/shroomie.png" class="d-inline-block" alt="parallax shroomie">
+                <p class="text-white mb-0 ">shroomie</p>
+            </div>
+
+            <!--textmagic-->
+            <div>
+                <p class="text-white mb-0 fw-bold fs-1 mt-5">Magic</p>
+                <p class="text-white mb-0 fw-bold fs-1 ">Mashrooms</p>
+            </div>
+            <!--for timer in parallex-->
+            <div class="clock offset-2 d-md-none">
+                <div class="mb-0">
+                    <p class="mb-0 text-white fs-5">Auction ends in:</p>
+                </div>
+                <div class="d-flex flex-row flex-nowrap text-center justify-content-center gap-4 align-items-start">
+                    <div>
+                        <p class="text-white fs-1 mb-1">59</p>
+                        <p class="text-white">Hours</p>
+                    </div>
+                    <span class="text-white fs-1 fw-bolder">:</span>
+                    <div>
+                        <p class="text-white fs-1 mb-1">59</p>
+                        <p class="text-white">Minutes</p>
+                    </div>
+                    <span class="text-white fs-1 fw-bolder">:</span>
+                    <div>
+                        <p class="text-white fs-1 mb-1">59</p>
+                        <p class="text-white">Seconds</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <a class="btt btn btn-light btn-rounded text-bg-light d-flex justify-content-center align-items-center gap-2 fw-bolder">
+                    <img src="imag/Eye.svg" alt="">
+                    See NFT
+                </a>
+            </div>
+        </div>
+        <div class="d-none d-md-block d-lg-none">
+            <div class="clock position-absolute top-50 mt-5 ">
+                <div class="mb-0">
+                    <p class="mb-0 text-white fs-5">Auction ends in:</p>
+                </div>
+                <div class="d-flex flex-row flex-nowrap text-center justify-content-center gap-4 align-items-start">
+                    <div>
+                        <p class="text-white fs-1 mb-1">59</p>
+                        <p class="text-white">Hours</p>
+                    </div>
+                    <span class="text-white fs-1 fw-bolder">:</span>
+                    <div>
+                        <p class="text-white fs-1 mb-1">59</p>
+                        <p class="text-white">Minutes</p>
+                    </div>
+                    <span class="text-white fs-1 fw-bolder">:</span>
+                    <div>
+                        <p class="text-white fs-1 mb-1">59</p>
+                        <p class="text-white">Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="howitwork mt-5">
+        <div class="col-12">
+            <p class="text-white fw-bold fs-1 mb-0">How it works</p>
+            <p class="text-white fs-5 mb-0">Find out how to get started</p>
+        </div>
+        <div class="col-12 mt-3 d-flex flex-md-row justify-content-md-around align-items-md-center flex-column flex-nowrap gap-3 gap-md-2">
+
+            <div class="d-flex flex-row flex-md-column align-items-md-center flex-nowrap col-md-3">
+                <div class="mb-0">
+                    <img src="imag/hwork1.png" alt="">
+                </div>
+                <div class="dtext text-md-center d-flex col-md-12 flex-column flex-nowrap justify-content-center ">
+                    <p class="text-white mb-1 mt-1 fs-3">Setup Your wallet</p>
+                    <p class="text-white mb-1 col-md-12 ">Set up your wallet of choice. Connect it to the NFT market by
+                        clicking the wallet icon in the top right corner.</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row flex-md-column align-items-md-center flex-nowrap col-md-3">
+                <div class="mb-0">
+                    <img src="imag/hwork1.png" alt="">
+                </div>
+                <div class="dtext text-md-center d-flex col-md-12 flex-column flex-nowrap justify-content-center ">
+                    <p class="text-white mb-1 mt-1 fs-3">Setup Your wallet</p>
+                    <p class="text-white mb-1 col-md-12 ">Set up your wallet of choice. Connect it to the NFT market by
+                        clicking the wallet icon in the top right corner.</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row flex-md-column align-items-md-center flex-nowrap col-md-3">
+                <div class="mb-0">
+                    <img src="imag/hwork1.png" alt="">
+                </div>
+                <div class="dtext text-md-center d-flex col-md-12 flex-column flex-nowrap justify-content-center ">
+                    <p class="text-white mb-1 mt-1 fs-3">Setup Your wallet</p>
+                    <p class="text-white mb-1 col-md-12 ">Set up your wallet of choice. Connect it to the NFT market by
+                        clicking the wallet icon in the top right corner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="weeklyjoin mt-5 d-md-flex justify-content-center align-items-md-center">
+        <div class="col-12 d-md-none">
+            <div class="col-12">
+                <img src="imag/weeklyjoin/Photo1.png" class="col-10 offset-1" alt="">
+            </div>
+            <div>
+                <p class="text-white col-8 fw-bolder" style="font-size: 35px">Join our weekly digest</p>
+                <p class="text-white">Get exclusive promotions & updates straight to your inbox.</p>
+            </div>
+            <div>
+                <div class="form-outline bg-light mb-4" style="border-radius: 20px">
+                    <input type="email" id="typeEmail" class="form-control"/>
+                    <label class="form-label" for="typeEmail">Enter Your Email Address</label>
+                </div>
+                <button type="button"
+                        class="btn col-12 btn-primary btn-rounded d-flex justify-content-center align-items-center "
+                        style="height: 50px;border-radius: 20px;font-size: 12px">
+                    <img src="imag/weeklyjoin/mailsvg.png" class="d-inline-block mx-2" alt="">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+
+        <div class="d-none card2 mb-3 d-md-flex flex-md-row flex-md-nowrap justify-content-md-around align-items-center"
+             style="max-width: 840px;height: 360px">
+            <div class="row g-0">
+                <div class="col-md-4 mt-3">
+                    <img
+                            src="imag/weeklyjoin/Photo2.png"
+                            alt="Trendy Pants and Shoes"
+                            class="img-fluid rounded-start px-2"
+                            style="width: 300px;height: 270px"
+                    />
+                </div>
+                <div class="col-md-8 px-3">
+                    <div class="card-body">
+                        <h5 class="card-title  col-6 text-white fs-1">Card title</h5>
+                        <p class="card-text text-white col-8">
+                            This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                        </p>
+                        <p class="card-text text-white">
+                            Last updated 3 mins ago
+                        </p>
+                    </div>
+                    <div class="d-lg-none">
+                        <div class="form-outline bg-light mb-4" style="border-radius: 20px">
+                            <input type="email" id="typeEmaile" class="form-control"/>
+                            <label class="form-label" for="typeEmaile">Enter Your Email Address</label>
+                        </div>
+                        <button type="button"
+                                class="btn col-12 btn-primary btn-rounded d-flex justify-content-center align-items-center "
+                                style="height: 50px;border-radius: 20px;font-size: 12px">
+                            <img src="imag/weeklyjoin/mailsvg.png" class="d-inline-block mx-2" alt="">
+                            Subscribe
+                        </button>
+                    </div>
+                    <div class="d-none d-lg-flex input-group flex-nowrap rounded-5">
+                        <input style="border-radius: 20px 0 0 20px" type="text" class="form-control" placeholder="Username" aria-label="Username"
+                               aria-describedby="addon-wrapping"/>
+                        <span style="border-radius: 0 20px 20px 0" class="bg-light px-0 pt-0 pb-0 input-group-text" id="addon-wrapping">
+                            <button type="button"
+                            class="btn col-12 btn-primary btn-rounded d-flex justify-content-center align-items-center "
+                            style="height:100%;border-radius: 20px;font-size: 12px">
+                            <img src="imag/weeklyjoin/mailsvg.png" class="d-inline-block mx-2" alt="">
+                            Subscribe
+                        </button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<footer style="background-color: #3b3b3b;padding: 40px 30px" class="mt-5 col-12 rounded-5">
+    <!--nft section-->
+    <div class="d-lg-flex flex-lg-row flex-lg-nowrap justify-content-lg-around ">
+        <!--col number 1-->
+        <div class="d-flex flex-column flex-md-nowrap col-lg-3">
+            <div class="d-flex align-items-center mb-xl-4 ">
+                <img src="imag/headericon.png" alt="header icon">
+                <p class="text-white fw-bold pt-3  ps-3 fw-normal">NFT Marketplace</p>
+            </div>
+            <p class="col-11 text-secondary">NFT marketplace UI created with Anima for Figma.</p>
+            <p class="text-secondary">Join our community</p>
+            <div class="d-flex flex-row justify-content-around align-items-center col-7 ">
+                <img src="imag/DiscordLogo.png" alt="logo">
+                <img src="imag/YoutubeLogo.png" alt="logo">
+                <img src="imag/TwitterLogo.png" alt="logo">
+                <img src="imag/InstagramLogo.png" alt="logo">
+            </div>
+        </div>
+        <!--col number 2-->
+        <div class="col-3 d-flex flex-column gap-lg-2">
+            <p class="text-white mb-lg-4 fs-5">Explore</p>
+            <p class="text-secondary">Marketplace</p>
+            <p class="text-secondary">Rankings</p>
+            <p class="text-secondary">Connect a wallet</p>
+        </div>
+        <!--col number 3-->
+        <div class="col-lg-5 d-flex flex-column gap-lg-3">
+            <p class="col-12 text-white fs-5">Join our weekly digest</p>
+            <p class="col-8 text-secondary">Get exclusive promotions & updates straight to your inbox.</p>
+            <div class="d-lg-none">
+                <div class="form-outline bg-light mb-3" style="border-radius: 20px">
+                    <input type="email" id="typeeEmail" class="form-control"/>
+                    <label class="form-label" for="typeeEmail">Enter Your Email Address</label>
+                </div>
+                <button type="button"
+                        class="btn col-12 btn-primary btn-rounded d-flex justify-content-center align-items-center "
+                        style="height: 50px;border-radius: 20px;font-size: 12px">
+                    <img src="imag/weeklyjoin/mailsvg.png" class="d-inline-block mx-2" alt="">
+                    Subscribe
+                </button>
+            </div>
+            <div class="d-none d-lg-flex input-group flex-nowrap rounded-5 col-8">
+                <input style="border-radius: 20px 0 0 20px" type="text" class="form-control" placeholder="Username" aria-label="Username"
+                       aria-describedby="addon-wrapping"/>
+                <span style="border-radius: 0 20px 20px 0" class="bg-light px-0 pt-0 pb-0 input-group-text" id="addonn-wrapping">
+                            <button type="button"
+                                    class="btn col-12 btn-primary btn-rounded d-flex justify-content-center align-items-center "
+                                    style="height:100%;border-radius: 20px;font-size: 12px">
+                            <img src="imag/weeklyjoin/mailsvg.png" class="d-inline-block mx-2" alt="">
+                            Subscribe
+                        </button>
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 mt-xl-5 col-12">
+        <div style="height: 1px;border-radius: 20px" class="bg-secondary"></div>
+        <p class="text-secondary"><span class="fs-5 text-secondary">&copy;</span> NFT Market. Use this template freely.</p>
+    </div>
+</footer>
+<!--link mdb5 js-->
+<script src="node_modules/mdb-ui-kit/js/mdb.min.js"></script>
+<script src="js/min.js"></script>
+</body>
+</html>
