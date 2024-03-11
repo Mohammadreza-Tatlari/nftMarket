@@ -720,6 +720,12 @@
 }
 
 
+.cbody {
+    padding: 10px 10px;
+    border-radius: 0px 0px 20px 20px !important;
+    background-color:#3B3B3B !important;
+}
+
 
 
 
